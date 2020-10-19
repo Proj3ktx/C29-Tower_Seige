@@ -36,27 +36,21 @@ function setup() {
   // stand
   stand = new Ground(500, 300, 180, 20);
   
-  //fourth level boxes
   box1 = new Box(440, 270, 30, 50);
   box2 = new Box(470, 270, 30, 50);
   box3 = new Box(500, 270, 30, 50);
   box4 = new Box(530, 270, 30, 50);
   box5 = new Box(560, 270, 30, 50);
- 
-  //third level boxes
   box7 = new Box(455, 220, 30, 50);
   box8 = new Box(485, 220, 30, 50);
   box9 = new Box(515, 220, 30, 50);
   box10 = new Box(545, 220, 30, 50);
- 
-  //second level boxes
   box12 = new Box(470, 170, 30, 50);
   box13 = new Box(500, 170, 30, 50);
   box14 = new Box(530, 170, 30, 50);
-
-  //first level boxes
   box16 = new Box(485, 120, 30, 50);
   box17 = new Box(515, 120, 30, 50);
+  box18 = new Box(500, 70, 30, 50);
   
   sling = new SlingShot(polygon, {x:100, y:300});
 }
@@ -84,6 +78,7 @@ function draw() {
   box14.display();
   box16.display();
   box17.display();
+  box18.display();
 
   image(polygon_img, polygon.position.x, polygon.position.y, 50, 50);
 
